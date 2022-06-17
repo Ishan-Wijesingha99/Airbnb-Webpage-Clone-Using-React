@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { ArrayOfParagraphs } from './components/ArrayOfParagraphs';
 import { Card1 } from './components/Card1';
 import { GridandText } from './components/GridandText';
 import { Navbar } from './components/Navbar';
@@ -12,6 +13,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <Navbar />
+
+      <ArrayOfParagraphs />
 
       <GridandText />
 
@@ -61,4 +64,3 @@ const pokemansPTags = pokemons.map(element => `<p>${element}</p>`);
 console.log(pokemansPTags);
 
 */
-
