@@ -2,13 +2,13 @@ import React from "react";
 import card1Image from "../images/card1.png"
 import star from '../images/star.png'
 
-// Card1
-export const Card1 = function(props) {
+// Card functional component
+export const Card = function(props) {
     return (
-        <div className="card-1-container">
-            <img id="card-1-image" src={props.img} alt='card 1 image'/>
+        <div className={`card-${props.cardNo}-container`}>
+            <img id={`card-${props.cardNo}-image`} src={props.img} alt='card 1 image'/>
 
-            <p id="status">SOLD OUT</p>
+            <p id="status">{props.status}</p>
 
             <div className="card-first-line">
                 <img id="star" src={star} alt='star rating image'/>
@@ -18,7 +18,7 @@ export const Card1 = function(props) {
             </div>
 
 
-            <p id="card-blur">{props.title}</p>
+            <p id="card-blur">{props.blur}</p>
 
             <p id="card-price"><b>From ${props.price}</b> / person</p>
         </div>
