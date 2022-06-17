@@ -29,3 +29,36 @@ root.render(
   </React.StrictMode>
 )
 
+
+
+/*
+
+// .map() challenges
+
+// challenge 1
+const numbers = [1, 2, 3, 4, 5];
+
+const numbersSquared = numbers.map(element => element**2);
+
+console.log(numbersSquared);
+
+
+
+// challenge 2
+const names = ['alice', "bob", "charlie", "danielle"];
+
+const capitalNames = names.map(element => element[0].toUpperCase() + element.slice(1));
+
+console.log(capitalNames);
+
+
+
+// challenge 3
+const pokemons = ["Bulbasaur", "Charmander", "Squirtle"];
+
+const pokemansPTags = pokemons.map(element => `<p>${element}</p>`);
+
+console.log(pokemansPTags);
+
+*/
+
