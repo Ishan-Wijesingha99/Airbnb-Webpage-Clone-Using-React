@@ -1,0 +1,94 @@
+/* general CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+
+
+/* navbar CSS */
+#logo {
+    height: 70px;
+}
+
+.navbar {
+    padding: 10px 5px;
+    box-shadow: 0 8px 2px -2px rgb(212, 211, 211);
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+/* Grid and Text CSS */
+
+#grid-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    margin-top: 50px;
+}
+
+#online-experiences-heading {
+    font-size: 4rem;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+#online-experiences-text {
+    font-size: 1.5rem;
+    margin-left: 40px;
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+
+
+
+
+/* Card 1 */
+
+.card-1-container {
+    display: inline-block;
+    position: relative;
+    background-color: rgb(196, 218, 237);
+}
+
+#status {
+    background-color: white;
+    font-size: 14px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(55, 53, 53);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.card-first-line {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#star {
+    height: 16px;
+}
+
+#star, #rating, #number, #country {
+    margin-right: 5px;
+}
+
+#card-blur {
+    margin-bottom: 10px;
+}
