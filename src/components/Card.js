@@ -5,8 +5,8 @@ import star from '../images/star.png'
 // Card functional component
 export const Card = function(props) {
     return (
-        <div className={`card-${props.cardNo}-container`}>
-            <img id={`card-${props.cardNo}-image`} src={props.img} alt='card 1 image'/>
+        <div className='card-container'>
+            <img id='card-image' src={props.img} alt='card 1 image'/>
 
             <p id="status">{props.status}</p>
 

@@ -57,10 +57,15 @@ body {
 
 /* Card 1 */
 
-.card-1-container {
+.card-container {
     display: inline-block;
     position: relative;
     background-color: rgb(196, 218, 237);
+    margin-right: 20px;
+}
+
+#card-image {
+    height: 300px;
 }
 
 #status {
@@ -92,3 +97,13 @@ body {
 #card-blur {
     margin-bottom: 10px;
 }
+
+
+
+
+/* all cards */
+.cards-flex-container {
+    display: flex;
+    align-items: center;
+}
+

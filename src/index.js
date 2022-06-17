@@ -17,7 +17,9 @@ root.render(
 
     <GridandText />
 
-    {allCardsArray}
+    <div className='cards-flex-container'>
+      {allCardsArray}
+    </div>
 
 
 

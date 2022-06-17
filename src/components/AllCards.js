@@ -14,7 +14,7 @@ export const dataArray = [
             rating: 5.0,
             reviewCount: 6
         },
-        location: "Online",
+        location: "USA",
         openSpots: 0,
         status: 'SOLD OUT'
     },
@@ -29,7 +29,7 @@ export const dataArray = [
             rating: 5.0,
             reviewCount: 30
         },
-        location: "Online",
+        location: "USA",
         openSpots: 27,
         status: 'SOLD OUT'
     },
@@ -60,7 +60,7 @@ export const allCardsArray = dataArray.map(function(object) {
             reviewCount={object.stats.reviewCount}
             country={object.location}
             price={object.price}
-            status={Object.status}
+            status={object.status}
             // this is how you add images that are in the PUBLIC FOLDER
             img={`cardimages/${object.coverImg}`}
         />
