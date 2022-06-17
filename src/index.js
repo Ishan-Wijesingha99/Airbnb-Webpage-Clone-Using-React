@@ -12,8 +12,20 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <Navbar />
+
       <GridandText />
-      <Card1 />
+
+      <Card1
+        cardNo={1}
+        // THIS IS HOW YOU ADD IMAGES AS PROPERTIES OF THE PROP OBJECT
+        img={require('../src/images/card1.png')}
+        rating="5.0"
+        reviewCount="6"
+        country="USA"
+        title="Life lessons with Katie Zaferes"
+        price="136"
+      />
+
   </React.StrictMode>
 )
 

@@ -3,24 +3,24 @@ import card1Image from "../images/card1.png"
 import star from '../images/star.png'
 
 // Card1
-export const Card1 = function() {
+export const Card1 = function(props) {
     return (
         <div className="card-1-container">
-            <img id="card-1-image" src={card1Image} alt='card 1 image'/>
+            <img id="card-1-image" src={props.img} alt='card 1 image'/>
 
             <p id="status">SOLD OUT</p>
 
             <div className="card-first-line">
                 <img id="star" src={star} alt='star rating image'/>
-                <p id="rating">5.0</p>
-                <p id="number">(6)</p>
-                <p id="country">USA</p>
+                <p id="rating">{props.rating}</p>
+                <p id="number">({props.reviewCount})</p>
+                <p id="country">{props.country}</p>
             </div>
 
 
-            <p id="card-blur">Life lessons with Katie Zaferes</p>
+            <p id="card-blur">{props.title}</p>
 
-            <p id="card-price"><b>From $136</b> / person</p>
+            <p id="card-price"><b>From ${props.price}</b> / person</p>
         </div>
     )
 }
