@@ -49,6 +49,7 @@ body {
     margin-left: 40px;
     margin-top: 15px;
     max-width: 600px;
+    margin-bottom: 40px;
 }
 
 
@@ -77,6 +78,17 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
+}
+
+#web-status {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: white;
+    font-size: 14px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(55, 53, 53);
 }
 
 .card-first-line {

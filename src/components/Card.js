@@ -4,23 +4,34 @@ import star from '../images/star.png'
 
 // Card functional component
 export const Card = function(props) {
+
+    // another way to conditionally render something
+    let webStat; 
+    if(props.propertiesObject.webStatus == 'Online') {
+        webStat = "Online";
+    } else {
+        webStat = '';
+    }
+
     return (
         <div className='card-container'>
             <img id='card-image' src={props.img} alt='card 1 image'/>
 
-            <p id="status">{props.status}</p>
+            {/* conditional rendering */}
+            {props.propertiesObject.openSpots ? <p id="status">BOOK NOW</p> : <p id="status">SOLD OUT</p>}
+            <p id="web-status">{webStat}</p>
 
             <div className="card-first-line">
                 <img id="star" src={star} alt='star rating image'/>
-                <p id="rating">{props.rating}</p>
-                <p id="number">({props.reviewCount})</p>
-                <p id="country">{props.country}</p>
+                <p id="rating">{props.propertiesObject.stats.rating}</p>
+                <p id="number">({props.propertiesObject.stats.reviewCount})</p>
+                <p id="country">{props.propertiesObject.location}</p>
             </div>
 
 
-            <p id="card-blur">{props.blur}</p>
+            <p id="card-blur">{props.propertiesObject.blur}</p>
 
-            <p id="card-price"><b>From ${props.price}</b> / person</p>
+            <p id="card-price"><b>From ${props.propertiesObject.price}</b> / person</p>
         </div>
     )
 }
